@@ -28,6 +28,12 @@ td {
     border-bottom: 1px solid silver;
     padding: 15px 0;
 }
+
+.form-row{
+    display: flex;
+    padding-right: 5px;
+}
+
 .t {
     width: 200px;
     font-weight: bold;
@@ -70,4 +76,5 @@ label {
 
 #N3 * {
     font-family: Arial, sans-serif;
+
 }
