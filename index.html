@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Лаборатоная работа №2</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div style="text-align:center;">
+        <h1>Личная страница студента</h1>
+        <p><strong>ФИО:</strong> Поляков Анатолий Константинович </p>
+        <img src="image.png" alt="Фото студента" style="width:200px;border:2px solid #000;border-radius:8px;">
+    </div>
+
+    <div class="infoS">
+        <div class="r">
+            <div class="t">Контакты</div>
+            <div class="i">
+                Email: <a href="mailto:polyakovanatoly@ygmail.com">polyakovanatoly@ygmail.com</a>
+            </div>
+        </div>
+        
+        <div class="r">
+            <div class="t">Мой ВУЗ</div>
+            <div class="i"><span>Нижневартовский государственный университет</span></div>
+        </div>
+        
+        <div class="r">
+            <div class="t">Сайт ВУЗа</div>
+            <div class="i">
+                <a href="https://nvsu.ru/" target="_blank">Сайт НВГУ</a>
+            </div>
+        </div>
+        
+        <div class="r">
+            <div class="t">Моя группа</div>
+            <div class="i">Группа: 3302</div>
+        </div>
+        
+        <div class="r">
+            <div class="t">Моя будущая профессия</div>
+            <div class="i">Неизвестно</div>
+        </div>
+        
+        <div class="r">
+            <div class="t">Мои увлечения</div>
+            <div class="i">
+                <ul>
+                    <li>Компьютерные игры</li>
+                    <li>Спорт</li>
+                    <li>Музыка</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="r">
+            <div class="t">Дополнительная информация</div>
+            <div class="i">Информация отсутствует</div>
+        </div>
+    </div>
+
+    <h2>Задание №2.2 А</h2>
+    <div class="cen">
+        <table>
+            <tr>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td rowspan="3"></td>
+                <td></td>
+                <td rowspan="3"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="3"></td>
+                <td rowspan="3"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <h2>Задание №2.2 Б</h2>
+    <div class="cen">
+        <table>
+            <tr>
+                <td colspan="8" class="b"></td>
+            </tr>
+            <tr>
+                <td rowspan="6" class="y"></td>
+                <td colspan="6" class="b"></td>
+                <td rowspan="6" class="y"></td>
+            </tr>
+            <tr>
+                <td rowspan="4" class="y"></td>
+                <td colspan="4" class="b"></td>
+                <td rowspan="4" class="y"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="y"></td>
+                <td id="red"></td>
+                <td id="blue"></td>
+                <td rowspan="2" class="y"></td>
+            </tr>
+            <tr>
+                <td id="green"></td>
+                <td id="yellow"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="b"></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="b"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="b"></td>
+            </tr>
+        </table>
+    </div>
+    <h2>Задание №2.3 А</h2>
+    <form>
+        <div class="form-row">
+            <label>Фамилия</label>
+            <input type="text" name="familia">
+        </div>
+
+        <div class="form-row">
+            <label>Инициалы</label>
+            <input type="text" name="IO">
+        </div>
+
+        <div class="form-row">
+            <label>Пароль</label>
+            <input type="password" name="Password">
+        </div>
+
+        <div class="form-row">
+            <label>Адрес получателя</label>
+            <input type="text" name="adress">
+        </div>
+
+        <div class="form-row">
+            <label>Количество</label>
+            <input type="number" name="colichestvo">
+        </div>
+
+        <div class="form-row">
+            <label>Тип</label>
+            <select name="bird_type">
+                <option value="">--Чьи--</option>
+                <option value="chicken">Куриные</option>
+                <option value="ostrich">Страусиные</option>
+            </select>
+
+            <select name="category">
+                <option value="">--Какая категория--</option>
+                <option value="1c">1с</option>
+                <option value="2c">2с</option>
+                <option value="otbor">отборные</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label>Доставка</label>
+            <div>
+                <input type="radio" name="delivery" value="post"> Почтой<br>
+                <input type="radio" name="delivery" value="electronic"> Электронно<br>
+                <input type="radio" name="delivery" value="courier"> Курьером
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label>Требуется накладная</label>
+            <input type="checkbox" name="invoice" value="yes">
+        </div>
+
+        <div class="form-row">
+            <label>Дополнительная информация</label>
+            <textarea name="message" rows="5" cols="30"></textarea>
+        </div>
+
+        <div class="form-row">
+            <label></label>
+            <div>
+                <input type="submit" value="Отправить">
+                <button type="button">Отмена</button>
+            </div>
+        </div>
+    </form>
+    <h2>Задание №2.3 Б</h2>
+    <form>
+        <div>
+            <label>Логин</label><br>
+            <input type='text' name='login'>
+        </div>
+
+        <div>
+            <label>Пароль</label><br>
+            <input type='password' name='Password'>
+        </div>
+
+        <div>
+            <label>URL-адрес сайта:</label><br>
+            <input type="text" name="userName" value="http://">
+        </div>
+
+        <div>
+            <label>Название сайта</label><br>
+            <input type='text' name='colichestvo'>
+        </div>
+
+        <div>
+            <label>Описание сайта</label><br>
+            <textarea name="message" rows="10" cols="40"></textarea>
+        </div>
+
+        <div>
+            <label>Тема сайта</label><br>
+            <select name="category" required>
+                <option value="">тема не выбрана</option>
+                <option value="tech">Животные</option>
+                <option value="clothes">Растения</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Баннер 88к31</label><br>
+            <input type='file' name='fail'>
+        </div>
+
+        <br>
+
+        <input type='reset' value='Очистить'>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <h2>Задание №3</h2>
+    <div id="N3">
+        <style>
+            #N3 {
+                border: 2px solid rgb(34, 28, 48);
+                margin-top: 2%;
+                padding: 20px;
+            }
+
+            .title {
+                text-align: center;
+                font-size: 26px;
+                color: #003399;
+                letter-spacing: 3px;
+                margin-bottom: 20px;
+            }
+
+            .green {
+                background: #07e207;
+                padding: 10px;
+                font-weight: bold;
+            }
+
+            .yellow {
+                background: #ffe600;
+                padding: 10px;
+                border: 1px solid #777;
+                margin-top: 10px;
+            }
+
+            .sub {
+                font-size: 20px;
+                color: #08085f;
+                margin-top: 25px;
+                font-weight: bold;
+            }
+
+            .table {
+                border-collapse: collapse;
+                margin-top: 20px;
+                width: 80%;
+            }
+
+            .table th,
+            .table td {
+                border: 2px solid black;
+                padding: 6px 12px;
+                text-align: center;
+            }
+        </style>
+
+        <h1 class="title">Т а б л и ц ы в HTML</h1>
+
+        <p class="green">
+            Одним из наиболее мощных и широко применяемых в
+            <span style="color: blue;">HTML</span> средствах являются
+            <b style="color: Red;">таблицы</b>.
+        </p>
+
+        <p class="yellow">
+            Понятие табличного представления данных не нуждается в дополнительных пояснениях...
+        </p>
+
+        <h2 class="sub">Создание простейших HTML-таблиц</h2>
+
+        <p>
+            <span style="background: pink; font-weight: bold;">Описание</span>
+            таблиц должно находиться внутри тега <b>&lt;BODY&gt;</b>.
+            Таблица начинается тегом <span style="color: purple;">&lt;TABLE&gt;</span>
+            и завершается <span style="color: purple;">&lt;/TABLE&gt;</span>.
+        </p>
+
+        <p>
+            Каждая строка — это <b>&lt;TR&gt;</b>, а ячейка — <b>&lt;TD&gt;</b> или <b>&lt;TH&gt;</b>.
+        </p>
+
+        <p style="text-align: right; font-style: italic;">Таблица 1</p>
+
+        <h3 style="text-align:center; color:#0033aa;">Математические выражения</h3>
+
+        <table class="table">
+            <tr>
+                <th>Поле 1</th>
+                <th style="background:#0e556d;">Поле 2</th>
+                <th style="background:#137e13;">Поле 3</th>
+                <th style="background:#cc1818;">Поле 4</th>
+                <th style="background:#444404;">Поле 5</th>
+            </tr>
+
+            <tr>
+                <td>(a + b)<sup>2</sup></td>
+                <td>a<sup>2</sup> − b<sup>2</sup></td>
+                <td>(a − b)<sup>3</sup></td>
+                <td>
+                    a<sub>1</sub> +
+                    a<sub>2</sub> +
+                    … +
+                    a<sub>n</sub>
+                </td>
+                <td>
+                    x<sup>n</sup> − x<sup>2</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+table,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+    border-top: 3px solid black;
+}
+
+.cen {
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(34, 28, 48);
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.infoS {
+    padding: 20px;
+}
+
+.r {
+    display: flex;
+    border-bottom: 1px solid silver;
+    padding: 15px 0;
+}
+.t {
+    width: 200px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.i{
+    color: #615e5e;
+}
+
+label {
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.b {
+    background-color: rgb(55, 216, 221);
+}
+
+.y {
+    background-color: rgb(211, 211, 115);
+}
+
+#blue {
+    background-color: blue;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#N3 * {
+    font-family: Arial, sans-serif;
+}
